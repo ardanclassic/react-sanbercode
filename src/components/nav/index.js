@@ -8,7 +8,7 @@ export default function Nav() {
     const [ sidenav, setSidenav ] = useState('0%');
     return (
         <div className="navbar" data-test="navbar">
-            <div className="title" data-test="logo-title">The Final</div>
+            <div className="title" data-test="logo-title">Monos</div>
 
             <span className="burger-menu" onClick={ () => setSidenav("100%") }>&#9776;</span>
             
