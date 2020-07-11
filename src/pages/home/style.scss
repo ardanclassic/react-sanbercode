@@ -1,0 +1,58 @@
+.home-area {
+    width: 90%;
+    margin: 56px  auto;
+    text-align: center;
+    .img-area {
+        position: relative;
+        width: max-content;
+        margin: 0 auto;
+    }
+    img {
+        width: 200px;
+        margin-bottom: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 36px;
+        margin-bottom: 24px;
+    }
+    h2 {
+        font-size: 24px;
+        margin-top: 24px;
+    }
+    .sites {
+        width: max-content;
+        margin: 16px auto;
+        display: flex;
+        a:hover {
+            text-decoration: none;
+        }
+        a:focus {
+            outline: none;
+        }
+        div {
+            padding: 3px 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin: 0 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .home-area {
+        h2 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 36px;
+        }
+        .sites {
+            display: block;
+            div {
+                margin: 12px;
+            }
+        }
+    }
+}

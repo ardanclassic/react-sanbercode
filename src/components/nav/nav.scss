@@ -1,0 +1,104 @@
+.navbar {
+    height: 60px;
+    position: relative;
+    border-bottom: 1px solid #d0d0d0;
+    padding: 10px 10%;
+    border-radius: 0 0 50px 50px;
+
+    .title {
+        width: max-content;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        font-family: monospace;
+        color: red;
+    }
+    
+    .burger-menu {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        position: absolute;
+        right: 10%;
+        top: 50%;
+        transform: translate(-10%, -50%);
+        font-size: 16px;
+
+        li {
+            margin: 0 10px;
+            text-align: right;
+            a {
+                text-decoration: none;
+            }
+            a.active {
+                color: red;
+            }
+        }
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align: center;
+
+        p {
+            &:first-child {
+                margin-top: 25%;
+            }
+            a {
+                text-decoration: none;
+                font-size: 25px;
+                color: dodgerblue;
+                display: block;
+                transition: 0.3s;
+                width: 60%;
+                margin: 36px auto;
+            }
+        }
+        .closebtn {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            font-size: 100px;
+            color: red;
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .navbar {
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        ul {
+            display: none;
+        }
+        .burger-menu {
+            display: block;
+            font-size: 24px;
+            position: absolute;
+            right: 12%;
+        }
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
+}

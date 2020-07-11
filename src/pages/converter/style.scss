@@ -1,0 +1,43 @@
+.converter-area {
+    margin: 50px auto;
+    h1 {
+        text-align: center;
+    }
+    .group {
+        width: 350px;
+        padding: 24px 36px;
+        margin: 16px auto;
+        border: 1px solid #ccc;
+        border-radius: 20px 20px 0 0;
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 28px;
+        }
+        .inputScale {
+            margin-bottom: 16px;
+            p {
+                margin: 0;
+            }
+            input {
+                width: 100%;
+                padding: 5px;
+                outline: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .converter-area {
+        margin: 24px auto;
+        h1 {
+            font-size: 32px;
+        }
+        .group {
+            width: 100%;
+            box-shadow: none;
+            border: 1px solid #ccc;
+        }
+    }
+}
