@@ -11,8 +11,8 @@ export default function index() {
             <h1>Hello, there!</h1>
             <p>
                 This is me, Ardan! You are free to play around, checking something, 
-                or whatever from this site. Hope it can give you some informations. You can
-                also reach my other site below:
+                or whatever from this site. Hope it can give you some informations. 
+                Also if you have free time, you can reach my other site below:
             </p>
             <div className="sites">
                 <a href="https://indocovid.netlify.app/" target="_blank" rel="noopener noreferrer">
@@ -20,9 +20,6 @@ export default function index() {
                 </a>
                 <a href="https://prophetnoah.netlify.app/" target="_blank" rel="noopener noreferrer">
                     <div>prophetnoah</div>
-                </a>
-                <a href="https://liverpool-info.netlify.app/" target="_blank" rel="noopener noreferrer">
-                    <div>liverpool</div>
                 </a>
             </div>
             <h2>Thank you for visiting me!</h2>
