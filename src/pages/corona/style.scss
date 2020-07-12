@@ -1,4 +1,4 @@
-.about-area {
+.covid-area {
     margin: 56px auto;
     & h1 {
         font-size: 24px;
@@ -86,7 +86,7 @@
 }
 
 @media only screen and (max-width: 575px) {
-    .about-area {
+    .covid-area {
         h1 {
             font-size: 20px;
             font-weight: 600;

@@ -56,7 +56,7 @@ export default class App extends Component {
         return (
             <React.Fragment>
                 <div className="converter-area">
-                    <h1>Converter Area</h1>
+                    <h1 data-test="title">Converter Area</h1>
                     <div className="divider"></div>
                     <Row>
                         <Col xs={12} md={6} xl={6}>

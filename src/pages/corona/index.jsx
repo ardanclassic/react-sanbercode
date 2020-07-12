@@ -4,7 +4,7 @@ import { actionGlobalInfo, actionCountryInfo, actionTableCountry } from 'redux/a
 import { CountryInfo, TableStatistic, Loading, GlobalInfo } from 'components';
 import './style.scss';
 
-function useCorona(props) {
+function Corona(props) {
     // redux action props
     const { actionTableCountry, actionCountryInfo, actionGlobalInfo } = props;
 
@@ -25,7 +25,7 @@ function useCorona(props) {
     }
     
     return (
-        <div className="about-area">
+        <div className="covid-area">
             <h1>Covid-19 Global Info</h1>
             { globalInfo ? <GlobalInfo data={globalInfo} /> : <Loading data="global-info" /> }
             { tableStatistic ? <TableStatistic data={tableStatistic} /> : <Loading data="table" /> }
@@ -50,4 +50,4 @@ const reduxDispatch = dispatch => ({
     actionGlobalInfo : () => dispatch(actionGlobalInfo())
 })
 
-export default connect(reduxState, reduxDispatch)(useCorona)
+export default connect(reduxState, reduxDispatch)(Corona)
